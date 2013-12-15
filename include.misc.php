@@ -27,7 +27,7 @@ function extract_globals()
 {
     $vars = array();
     
-    foreach($GLOBALS as $key => $value){
+    foreach(array_keys($GLOBALS) as $key){
         $vars[] = "$".$key;
     }
     
